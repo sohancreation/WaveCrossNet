@@ -1,0 +1,105 @@
+{
+    "statistical_results": {
+        "WaveCrossNet": {
+            "mean_f1": 96.41999999999999,
+            "std_f1": 0.10373041983911901,
+            "formatted": "96.42% \u00b1 0.10%"
+        },
+        "ResNet1D": {
+            "mean_f1": 91.35,
+            "std_f1": 0.319624780015567,
+            "formatted": "91.35% \u00b1 0.32%",
+            "t_stat": 44.34760447818247,
+            "p_val_t": 1.545965752240002e-06,
+            "w_stat": 0.0,
+            "p_val_w": 0.0625,
+            "significant": true
+        },
+        "ViT1D": {
+            "mean_f1": 89.82,
+            "std_f1": 0.3799473647757023,
+            "formatted": "89.82% \u00b1 0.38%",
+            "t_stat": 45.995544265480554,
+            "p_val_t": 1.3363520588469258e-06,
+            "w_stat": 0.0,
+            "p_val_w": 0.0625,
+            "significant": true
+        },
+        "WaveMLP": {
+            "mean_f1": 86.19999999999999,
+            "std_f1": 0.2712194683277746,
+            "formatted": "86.20% \u00b1 0.27%",
+            "t_stat": 115.94189287105014,
+            "p_val_t": 3.3187485759209584e-08,
+            "w_stat": 0.0,
+            "p_val_w": 0.0625,
+            "significant": true
+        }
+    },
+    "ablation_results": {
+        "wavelet_family": {
+            "db4": {
+                "clean_f1": 96.42,
+                "awgn_0db_f1": 85.7
+            },
+            "haar": {
+                "clean_f1": 93.8,
+                "awgn_0db_f1": 79.2
+            },
+            "sym4": {
+                "clean_f1": 96.15,
+                "awgn_0db_f1": 85.1
+            },
+            "bior2.2": {
+                "clean_f1": 94.6,
+                "awgn_0db_f1": 81.5
+            }
+        },
+        "dwt_levels": {
+            "level_1": {
+                "clean_f1": 92.1,
+                "awgn_0db_f1": 76.4
+            },
+            "level_2": {
+                "clean_f1": 94.85,
+                "awgn_0db_f1": 81.8
+            },
+            "level_3_default": {
+                "clean_f1": 96.42,
+                "awgn_0db_f1": 85.7
+            },
+            "level_4": {
+                "clean_f1": 96.38,
+                "awgn_0db_f1": 85.65
+            }
+        },
+        "attention_fusion": {
+            "cross_attention_ours": {
+                "clean_f1": 96.42,
+                "awgn_0db_f1": 85.7
+            },
+            "self_attention": {
+                "clean_f1": 91.2,
+                "awgn_0db_f1": 72.4
+            },
+            "static_concatenation": {
+                "clean_f1": 86.2,
+                "awgn_0db_f1": 65.4
+            },
+            "elementwise_addition": {
+                "clean_f1": 88.5,
+                "awgn_0db_f1": 69.1
+            }
+        },
+        "quantization": {
+            "float32_precision": {
+                "clean_f1": 96.42,
+                "awgn_0db_f1": 85.7
+            },
+            "int8_post_quantization": {
+                "clean_f1": 96.28,
+                "awgn_0db_f1": 85.45
+            }
+        }
+    }
+}

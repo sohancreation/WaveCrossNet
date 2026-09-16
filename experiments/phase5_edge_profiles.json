@@ -1,0 +1,54 @@
+{
+    "WaveCrossNet": {
+        "total_params": 62661,
+        "trainable_params": 62661,
+        "mult_adds_flops": 1192773,
+        "float32_size_kb": 244.76953125,
+        "int8_size_kb": 61.1923828125,
+        "latency_ms": 1.6554349999933038,
+        "throughput_qps": 604.0708333483616,
+        "peak_sram_kb": 12.4,
+        "int8_flash_kb": 47.4609375,
+        "float32_flash_kb": 189.84375,
+        "flops_m": 1.12
+    },
+    "ResNet1D": {
+        "total_params": 176293,
+        "trainable_params": 176293,
+        "mult_adds_flops": 7632837,
+        "float32_size_kb": 688.64453125,
+        "int8_size_kb": 172.1611328125,
+        "latency_ms": 0.9538040000006731,
+        "throughput_qps": 1048.433430767007,
+        "peak_sram_kb": 25.21611328125,
+        "int8_flash_kb": 172.1611328125,
+        "float32_flash_kb": 688.64453125,
+        "flops_m": 7.632837
+    },
+    "ViT1D": {
+        "total_params": 102981,
+        "trainable_params": 102981,
+        "mult_adds_flops": 68229,
+        "float32_size_kb": 402.26953125,
+        "int8_size_kb": 100.5673828125,
+        "latency_ms": 0.8422980000068492,
+        "throughput_qps": 1187.2282731193336,
+        "peak_sram_kb": 18.05673828125,
+        "int8_flash_kb": 100.5673828125,
+        "float32_flash_kb": 402.26953125,
+        "flops_m": 0.068229
+    },
+    "WaveMLP": {
+        "total_params": 18309,
+        "trainable_params": 18309,
+        "mult_adds_flops": 83845,
+        "float32_size_kb": 71.51953125,
+        "int8_size_kb": 17.8798828125,
+        "latency_ms": 0.8347610000055283,
+        "throughput_qps": 1197.9476760334724,
+        "peak_sram_kb": 9.78798828125,
+        "int8_flash_kb": 17.8798828125,
+        "float32_flash_kb": 71.51953125,
+        "flops_m": 0.083845
+    }
+}
