@@ -9,6 +9,7 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{url}
+\usepackage[hidelinks]{hyperref}
 \usepackage{microtype}
 \usepackage{multirow}
 \usepackage{enumitem}
@@ -342,7 +343,7 @@ Relative to prior edge studies, Satija et al. \cite{satija2018real} demonstrated
 We introduced WaveCrossNet, a lightweight wavelet cross-attention network for noise-resilient ECG arrhythmia classification on microcontrollers. By querying temporal convolutions with DWT spectral subbands, WaveCrossNet reduces dominant $QK^\top$ attention compute by $8\times$ compared to 32-token self-attention while meeting strict embedded memory limits (62.24~KB Flash binary, 12.40~KB SRAM, 14.80~ms latency on Cortex-M4). Evaluated across MIT-BIH (100,694 beats) and zero-shot on SVDB (22,540 beats), it delivers 91.03\% weighted F1, 94.94\% V-recall, 16.60\% S-recall (36.85\% calibrated), and a +14.2~pp Macro F1 advantage over ResNet1D at 0~dB noise, establishing a robust and practical baseline for wearable cardiac intelligence.
 
 \section*{Reproducibility Statement}
-PyTorch models, CMSIS-NN kernels, and evaluation scripts: \url{https://anonymous.4open.science/r/WaveCrossNet}. PhysioNet databases were utilized under open access.
+PyTorch models, CMSIS-NN kernels, and evaluation scripts: \url{https://anonymous.4open.science/r/WaveCrossNet-3F31}. PhysioNet databases were utilized under open access.
 
 \footnotesize
 \def\BIBdecl{%
